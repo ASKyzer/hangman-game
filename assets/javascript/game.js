@@ -21,6 +21,22 @@ for (i = 0; i < currentWord.length; i++){
   console.log(currentWord[i]);
 }
 
+//RETURN A 'HIDDEN' VERSION OF THE SUPPLIED SECRET WORD
+
+    // Given a string, "word", return a hidden version of it consisting
+    // of dashes for the display.
+    // REPLACE THIS CODE WITH YOUR getDisplay() METHOD
+console.log(currentWord);
+    var answer="";
+    for (var i=0; i < currentWord.length; i++ ){
+        answer = answer +'-';
+    }
+    console.log(answer);
+
+var display =
+    "<h4>" + answer + "</h4";
+
+document.getElementById('word').innerHTML = display;
 
   document.onkeyup = function(event) {
       // Determines which key was pressed.
