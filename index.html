@@ -16,12 +16,65 @@
   </head>
 
   <body>
-    <h1>Hangman Game</h1>
-    <h3>Press any key to play</h3>
-    <div id="wins"> </div>
-    <p>Current Word</p>
-    <div id="word"> </div>
-    <div id="game">  </div>
+    <div class="container p-0">
+      <div class="row">
+        <div class="col mb-4 mt-3" align="center">
+          <h1>Hangman Game</h1>
+          <h6>Press any key to get started...</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div id="keypad" class="col ml-5 mr-5 mb-1" align="center">
+          <div id="btn-a" class="letter-button">A</div>
+          <div id="btn-b" class="letter-button">B</div>
+          <div id="btn-c" class="letter-button">C</div>
+          <div id="btn-d" class="letter-button">D</div>
+          <div id="btn-e" class="letter-button">E</div>
+          <div id="btn-f" class="letter-button">F</div>
+          <div id="btn-g" class="letter-button">G</div>
+          <div id="btn-h" class="letter-button">H</div>
+          <div id="btn-i" class="letter-button">I</div>
+          <div id="btn-j" class="letter-button">J</div>
+          <div id="btn-k" class="letter-button">K</div>
+          <div id="btn-l" class="letter-button">L</div>
+          <div id="btn-m" class="letter-button">M</div>
+          <div id="btn-n" class="letter-button">N</div>
+          <div id="btn-o" class="letter-button">O</div>
+          <div id="btn-p" class="letter-button">P</div>
+          <div id="btn-q" class="letter-button">Q</div>
+          <div id="btn-r" class="letter-button">R</div>
+          <div id="btn-s" class="letter-button">S</div>
+          <div id="btn-t" class="letter-button">T</div>
+          <div id="btn-u" class="letter-button">U</div>
+          <div id="btn-v" class="letter-button">V</div>
+          <div id="btn-w" class="letter-button">W</div>
+          <div id="btn-x" class="letter-button">X</div>
+          <div id="btn-y" class="letter-button">Y</div>
+          <div id="btn-z" class="letter-button">Z</div>
+        </div>
+      </div>
+
+      <div class="row m-3" align=center>
+        <div class="col word-in-play">
+          <p>Guess an American city</p>
+          <br>
+          <div id="word"> </div>
+        </div>
+      </div>
+
+      <div class="row" align=center>
+        <div class="col-sm-8 ">
+          <p>Wins: <span id="wins"> </span></p>
+          <p>Number of Guess Remaining: <span id="lives"> </span></p>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-lg reset-button"type="button" name="button">Reset</button>
+        </div>
+      </div>
+
+      <div id="game"> </div>
+    </div>
+
 
 
     <!-- Optional JavaScript -->
@@ -29,7 +82,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
 
   </body>
 </html>
